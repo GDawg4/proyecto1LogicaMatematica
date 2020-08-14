@@ -62,7 +62,7 @@ class Grafo:
 
 # grafo representado en la matriz booleana R
 R = [
-  [1, 1, 0, 1],
+	[1, 1, 0, 1],
 	[0, 1, 1, 0],
 	[0, 0, 1, 1],
 	[0, 0, 0, 1]
