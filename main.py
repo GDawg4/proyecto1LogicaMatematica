@@ -18,8 +18,8 @@ class Grafo:
   # función para imprimir la matriz 
   def printSolution(self, solutionMatrix, mode): 
     (
-      print ("El cierre transitivo por matrices para el grafo es: ") if mode == 1 else 
-      print ("El cierre transitivo por Warshall para el grafo es: ") 
+      print ("El cierre transitivo para el grafo, por matrices booleanas, es: ") if mode == 1 else 
+      print ("\nEl cierre transitivo para el grafo, por el algoritmo de Warshall, es: ")
     )
     for i in range(self.size): 
       for j in range(self.size): 
@@ -77,4 +77,3 @@ grafo = Grafo(len(R))
 # se llama a los dos métodos para calcular el cierre transitivo
 grafo.matricesBooleanas(R)
 grafo.warshall(R)
-
